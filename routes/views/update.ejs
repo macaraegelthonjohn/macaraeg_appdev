@@ -1,0 +1,8 @@
+<%- include('layout', { title: 'Update Item' }) %>
+
+<h1>Update Item with ID: <%= id %></h1>
+<form action="/update/<%= id %>" method="POST">
+    <label for="item">New Item Value:</label>
+    <input type="text" id="item" name="item" required>
+    <button type="submit">Update</button>
+</form>
